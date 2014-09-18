@@ -6,7 +6,10 @@ class ManagersController < ApplicationController
   # GET /managers.json
   def index
     @managers = Manager.all
+    redirect_to employees_path
   end
+
+
 
   # GET /managers/1
   # GET /managers/1.json
